@@ -9,7 +9,15 @@ Please take your time with this quiz, there is no rush. While we generally stron
 
 When you have finished, or gotten as far as you can, please email your quiz to yurigorokhov@gmail.com and ryan@codingnomads.co. After everyone has completed the quiz and emailed their results to Yuri and Ryan we will discuss the quiz as a class.
 
-## Basics
+## Git & GitHub
+
+- What is Git?
+- What is GitHub?
+- Please list all the Git commands you can think of, and explain what each of the commands does.
+- What is the general git workflow for a developer on a day-to-day basis?
+- Is it important to push your work to GitHub every day?
+
+## Python Basics
 
 - Name 5 python keywords.
 - Describe the difference between a `statement` and an `expression`. Provide an example of each.
