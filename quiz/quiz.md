@@ -1,9 +1,13 @@
-Quiz
+Day 1: Baseline Quiz
 ====
 
 ## Intro
 
 Some of the questions below are short-answer questions, others require some coding. Some of the short-answer questions may require you to write some code to explain yourself.
+
+Please take your time with this quiz, there is no rush. While we generally strongly encourage you to use Google to answers questions on a very regular basis, please do your best to complete this quiz without any external assistance from Google or from the CodingNomads online platform.
+
+When you have finished, or gotten as far as you can, please email your quiz to yurigorokhov@gmail.com and ryan@codingnomads.co. After everyone has completed the quiz and emailed their results to Yuri and Ryan we will discuss the quiz as a class.
 
 ## Basics
 
@@ -26,9 +30,11 @@ Some of the questions below are short-answer questions, others require some codi
 ## OOP
 - What is object oriented programing. Why use it? 
 - What is the difference between a function and a method?
-- Write and use simple class that contains: a constructor, an instance variable, an instance method.
+- Write and use a simple class that contains: a constructor, an instance variable, an instance method.
 - Describe inheritance. Why use it?
+- What does is to mean to "override" a function?
 - What is `self`
+- What is polymorphism? 
 
 ## Error handling
 - Unfortunately programs do not always run perfectly. What type of errors might occur in a program?
@@ -36,6 +42,7 @@ Some of the questions below are short-answer questions, others require some codi
 - [Optional] what are other ways to handle errors?
 - Give an example of when you would throw an exception. (write code)
 - Give a code example of how you would handle the exception above.
+- What is "Pbd"? How do we use it?
 
 ## List comprehensions/generators
 
@@ -48,6 +55,11 @@ Some of the questions below are short-answer questions, others require some codi
 
 ## Databases
 
+- What is a primary key?
+- What is a foreign key?
+- What is a relational database? 
+- What makes a database relational?
+- How do we avoid releating and redundant data in relational databases?
 - Write a simple database schema (make up your own). Write a simple `SELECT`, `INSERT` and `DELETE` query against your schema. Make sure they actually work.
 - Given the following schema:
 
@@ -62,9 +74,9 @@ CREATE TABLE IF NOT EXISTS employees (
 ```
 
 write the following queries:
-- A table of employees that have a salary above $50,000K
-- A table of all the employees and their corresponding managers.
-- A table of all the managers and the average salary of the employees that report to them.
+- A result set of employees that have a salary above $50,000K
+- A result set of all the employees and their corresponding managers.
+- A result set of all the managers and the average salary of the employees that report to them.
 
 ## Challenges
 - Write a generator function that creates the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
