@@ -20,7 +20,8 @@ Write a calculator that operates in prefix (Polish) notation. Learn more about P
 # Features:
 
 - Support for common operations: +, -, *, /, modulo, sqrt (square root), pow (raising to power)
-- Fully unit tested
+- Fully unit tested (run a coverage report: https://coverage.readthedocs.io/en/v4.5.x/)
+- Interactive REPL interface (think IPython, Bash, etc)
 
 ## Bonus:
 - Support for defining variables

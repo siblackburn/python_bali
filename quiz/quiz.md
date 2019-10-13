@@ -71,5 +71,6 @@ write the following queries:
 - Write a function to reverse a string
 - Write a function that determines if a number is odd or even
 - Write a function to check if a number is prime
+- Write a function that generates the first n prime numbers
 - Write a function that takes a list as input and returns a list with all duplicates removed. eg: `[1,1,2,2,3]` -> `[1,2,3]`
 - Write a python implementation of the `wc` command. See `man wc` for a desctiption of how it is supposed to work.
