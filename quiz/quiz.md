@@ -86,11 +86,11 @@ write the following queries:
 - A result set of all the employees and their corresponding managers.
 - A result set of all the managers and the average salary of the employees that report to them.
 
-## Challenges
-- Write a generator function that creates the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+## Challenges (do as many as you can)
 - Write a function to reverse a string
 - Write a function that determines if a number is odd or even
 - Write a function to check if a number is prime
 - Write a function that generates the first n prime numbers
 - Write a function that takes a list as input and returns a list with all duplicates removed. eg: `[1,1,2,2,3]` -> `[1,2,3]`
-- Write a python implementation of the `wc` command. See `man wc` for a desctiption of how it is supposed to work.
+- Write a generator function that creates the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+- Write a python implementation of the `wc` command. See `man wc` for a description of how it is supposed to work.
