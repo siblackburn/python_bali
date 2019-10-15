@@ -20,10 +20,14 @@ git commit -m "my new comments here" - commits the changes to a new version
 git push - pushes the commit to your repository
 git remote - checks where your git is pointing to. If it says origin it's pointing to your git
 git remote -v - checks the github url your project is being saved to
+git status - shows status of files - which were committed, changed etc
+git reset - soft reset unstages files you've staged
+git reset --hard - is a hard reset
+rm -rf .git - remove the git repository
 
 
 - What is the general git workflow for a developer on a day-to-day basis?
-1) Ensure Git is running
+1) Ensure Git is running and pull latest code from github
 2) Work on project
 3) Commit changes
 4) Push changes
@@ -43,9 +47,11 @@ Also - if you're working in a team, you will need to keep your team up to date w
 
 - Describe the difference between a `statement` and an `expression`. Provide an example of each.
 A statement is a line of code that performs an action, whereas an expression is code that evaluates to a value, and can be combined with multiple lines of code
+e.g. statement: x = 0
+e.g. expression: x = a + b
 
 - Name the primitive python datatypes (as many as you can think of), and provide a declaration of each.
-1) Integer
+1) Integer: by default, values can go up to 64 bit (2 ^ 64)
 2) Float
 3) String
 4) Boolean
@@ -53,6 +59,7 @@ A statement is a line of code that performs an action, whereas an expression is 
 
 - Convert a floating point to an integer
 int(floating_point)
+or round(floating_point)
 
 - Name some complex python data structures. Specify why and when you would use these.
 #I looked this up....sorry!!
@@ -76,26 +83,42 @@ Whereas for loops are used to iterate through items in a list/dictionary/set etc
 ## Functions
 - What is a function? Define a simple function. (One that adds two numbers for example)
 A function is a set of code that performs a task and returns and outcome
+It's a way to reuse code rather than having to re-write to use it
 
 def add_numbers(a, b):
     c = a + b
     return c
 
 - When a variable is declared inside a function, what scope does it have?
-The scope is within the function (and within the level of indentation it sits at)
+The scope is within the function - local scope (and within the level of indentation it sits at)
 
 - Describe variable shadowing and how it applies to functions (use code to explain yourself if appropriate)
+2 variables with the same name but different local scope (e.g. one global one local). Bad practice!!!!
+
 - What are first class functions? Provide a code example of first class functions being used.
+Referencing a function as if it was a value or a variable
+my_new_variable = the_function
+All functions in python are first class functions.
+
 - What does the return keyword do
 The return keyword allows us to return something out of the function to be used elsewhere.
 e.g. in the example above - we can then call c to print, assign to a variable etc.
+
 - [Optional] - What is pass by reference vs pass by value? When would you use one over the other?
+Pass by value - you get a copy of the value, and you don't get to modify it
+pass by reference - e.g. passing a list. You pass the reference to the list, not the values of the list. Many functions can modify the same variable
+
 
 ## OOP
 - What is object oriented programing. Why use it?
-Languages where everything is an object (for example Python!!!).
+Languages where everything is an object (for example Python!!!). Rather than defining code around functions
+We use it to reduce repetition
+Concept of data encapsulation - *lookup!!
 
 - What is the difference between a function and a method?
+Method is a function that applies to a class
+self is the first argument of a method
+
 - Write and use a simple class that contains: a constructor, an instance variable, an instance method.
 
 Class my_class()
@@ -119,6 +142,11 @@ b) So making changes is easier (we only make changes to one input rather than mo
 Overriding is the ability to change the implementation of a method made by it's ancestors.
 The child class can get passed a method from the parent class and then perform some additional functionality/change the functionality
 
+e.g. parent class also defines colour, the same as the child class. But you want to use the child classes version of colour
+e.g. vehicle class has accelerate
+you use accelerate method for cars cnad vans
+but for motorbikes the method is different
+
 - What is `self`
 Self is the variable we define when creating a method that allows us to pass variables. This allows inheritance.
 
@@ -129,9 +157,12 @@ e.g. __Add__ function would evaluate 1+2 as well as "one" + "two"
 
 ## Error handling
 - Unfortunately programs do not always run perfectly. What type of errors might occur in a program?
-ValueError
+Input/output error - e.g. is you're trying to read a file that doesnt' exist
+Networkerror - e.g. server is down
 TypeError
 SyntaxError
+
+ValueError - runtime exception. e.g. a user error, where they didn't enter within parameters
 Out of range
 
 
@@ -144,7 +175,7 @@ Very useful!
 Through exceptions testing: where we define what should happen when we encounter certain types of errors
 
 - Give an example of when you would throw an exception. (write code)
-
+e.g. when you get input that you aren't expecting at the time you wrote the code
 user_input = input("Enter a number between 1 and 1000:")
 
 while user_input <1 or user_input > 1000:
@@ -160,7 +191,8 @@ e.g. you wanted a number between 1 and 10 and they entered 11. You ask them to e
 Catching an exception: an error has occurred and you do something with it. e.g. in exceptions testing you may choose to convert the data type on behalf of the user
 
 - Give a code example of how you would handle the exception above.
-- What is "Pbd"? How do we use it?
+- What is "Pdb"? How do we use it?
+Python Debugger. Is a lens to be able to see whats going on in oyour code
 
 ## List comprehensions/generators
 
@@ -171,13 +203,19 @@ Catching an exception: an error has occurred and you do something with it. e.g. 
 numbers_list = [x * 2 for x in range(10)]
 print(numbers_list)
 
+- [2, 4, 6, 8, 10, 12, 14, 16, 18]
+   list1 = [x for x in range(2,19,2)]
+   - [2, 4, 8, 16, 32, 64, 128, 256, 512]
+   list1 = [list1 = [2**x for x in range(1,10)]]
 
 
 - What is the difference between:
     - `[x for x in range(10)]`
-    - `(x for x in range(1, 10))`
+    - `(x for x in range(10))`
 
- The second line will miss out the first item in range (idx 0)
+ The first one is a list, the second is a generator
+ first - generates every item in the list
+ second - none of the elements have been created until you materialise the generator. So it doesn't take up memory
 
 ## Databases
 
@@ -274,5 +312,10 @@ print(output)
 
 
 - Write a function that takes a list as input and returns a list with all duplicates removed. eg: `[1,1,2,2,3]` -> `[1,2,3]`
+# could turn it into a set!
+or
+
+
+
 - Write a generator function that creates the [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
 - Write a python implementation of the `wc` command. See `man wc` for a description of how it is supposed to work.

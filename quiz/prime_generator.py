@@ -2,18 +2,27 @@
 - Write a function that generates the first n prime numbers
 '''
 
-n_number = int(input("How many prime numbers do you want"))
 
-prime_list = []
-
-def prime_numbers(x):
-    while len(prime_list) < n_number:
-        for numbers in range(2, 1000):
-            if numbers % == 0:
-                prime_list.append(numbers)
-    else:
-        return prime_list
+def prime_n(x):
+    for numbers in range(2, x):
+        if x % numbers != 0:
+            return True
+        else:
+            return False
 
 
-output = prime_numbers(n_number)
-print(output)
+prime_numbers = []
+
+def primegen(n):
+    prime_number_count = 0
+    prime_start = 2
+    while prime_number_count < n:
+        if prime_n(prime_start) == True:
+            prime_numbers.append(prime_start)
+            prime_number_count += 1
+            prime_start += 1
+        else:
+            prime_start += 1
+
+user_input = primegen(10)
+print(prime_numbers)
