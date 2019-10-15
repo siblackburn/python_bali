@@ -1,0 +1,2 @@
+Folder for class exercises
+==========================
