@@ -1,10 +1,29 @@
 Calculator
 ==========
 
-Write a calculator that operates in prefix (Polish) notation. Learn more about Polish notation: https://en.wikipedia.org/wiki/Polish_notation
+# Intro
+
+Write a calculator that operates in prefix notation. Learn more about prefix/Polish notation: https://en.wikipedia.org/wiki/Polish_notation
 
 
-# Example inputs:
+# Warm-up:
+
+Write a function that validates matching parenthesis in a prefix notation formula.
+
+Valid:
+
+`(+ 1 2)`
+
+Invalid:
+`(+ 1 2)(`
+
+In general, we are trying to validate that each open parenthesis, should have a corresponding closed parenthesis. hint: use a stack.
+
+
+
+# Main challenge:
+
+Write a calculator that works like the examples below:
 
 ```
 >> (+ 1 2)
@@ -22,6 +41,8 @@ Write a calculator that operates in prefix (Polish) notation. Learn more about P
 - Support for common operations: +, -, *, /, modulo, sqrt (square root), pow (raising to power)
 - Fully unit tested (run a coverage report: https://coverage.readthedocs.io/en/v4.5.x/)
 - Interactive REPL interface (think IPython, Bash, etc)
+
+
 
 ## Bonus:
 - Support for defining variables
