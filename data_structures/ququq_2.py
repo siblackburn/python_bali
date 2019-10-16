@@ -7,6 +7,7 @@ class Queue:
         self._data_stack = Stack()
         self._utility_stack = Stack()
 
+# Complexity: 2 * O(n)?? for 2 for loops, but not nested!
     def enqueue(self, item):
         if self._data_stack.__len__() < 1:
             self._data_stack.push(item)
@@ -19,6 +20,7 @@ class Queue:
             self._data_stack.push(self._utility_stack.pop())
             #everything is on the data stack in the original order
 
+# Complexity: O(1)
     def dequeue(self):
         if self._data_stack.__len__() < 1:
             raise Exception("queue is empty")
@@ -26,8 +28,8 @@ class Queue:
 # pop removes the data item that's been there the longest, when in a queue
 
 
-    # def __len__(self):
-    #     return len(self._data_stack)
+    def __len__(self):
+        return len(self._data_stack)
 
 
 
