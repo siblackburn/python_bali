@@ -8,17 +8,20 @@ Write a calculator that operates in prefix notation. Learn more about prefix/Pol
 
 # Warm-up:
 
-Write a function that validates matching parenthesis in a prefix notation formula.
+Write a function that finds all the matching parenthesis. Let's use string indeces to identify each parenthesis. For example:
 
 Valid:
 
-`(+ 1 2)`
+`(+ 1 2)` -> (0, 6)
 
-Invalid:
-`(+ 1 2)(`
+parenthesis at position 0 matches with parenthesis at position 6
 
-In general, we are trying to validate that each open parenthesis, should have a corresponding closed parenthesis. hint: use a stack.
+`(* (+ 1 2) 2)` -> [(0, 12), (3, 9)]
 
+parenthesis at position 0 matches with parenthesis at position 12
+parenthesis at position 3 matches with parenthesis at position 9
+
+hint: use a stack.
 
 
 # Main challenge:
