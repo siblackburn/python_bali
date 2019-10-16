@@ -17,7 +17,7 @@ Valid:
 Invalid:
 `(+ 1 2)(`
 
-In general, we are trying to validatae that each open parenthesis, should have a corresponding closed parenthesis.
+In general, we are trying to validate that each open parenthesis, should have a corresponding closed parenthesis. hint: use a stack.
 
 
 
