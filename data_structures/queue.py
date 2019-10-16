@@ -1,22 +1,15 @@
 class Queue:
     
     def __init__(self):
-        ...
+        self._data = list()
     
     def enqueue(self, item):
-        """
-        Add item to the queue.
-        """
-        ...
+        self._data.append(item)
             
     def dequeue(self):
-        """
-        Remove item from the queue.
-        """
-        ...
+        item = self._data[0]
+        del self._data[0]
+        return item
     
     def __len__(self):
-        """
-        Returns the length of the queue
-        """
-        ...
+        return len(self._data)
