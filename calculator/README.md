@@ -8,9 +8,9 @@ Write a calculator that operates in prefix notation. Learn more about prefix/Pol
 
 # Warm-up:
 
-Write a function that finds all the matching parenthesis. Let's use string indeces to identify each parenthesis. For example:
+Write a function that finds all the matching parenthesis. Let's use string indeces to identify each parenthesis. 
 
-Valid:
+For example:
 
 `(+ 1 2)` -> (0, 6)
 
