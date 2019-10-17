@@ -76,6 +76,25 @@ class LinkedList:
             current_node = current_node.next # move the current node forward
 
     '''
+    Function to find a key and remove the first instance from it. 
+    while loop ensures that we loop through until we either reach the end of the list, or we find the key
+    '''
+    def delete_first_key(self, key):
+        current = self._first
+        previous = None
+
+        if current == key:
+            self._first = self._first.next
+            return
+        while current and current == key:
+            previous = current
+            current = current.next
+        if current is None:
+            return
+
+        previous.next = current.next
+
+    '''
     Reverses the Linked list, meaning the first item is now the last. 
     Defines previous node and current node (0 and head)
     then pushes each element backward in the queue one by one

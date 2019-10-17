@@ -17,7 +17,7 @@ hint: use a stack.
 
 from data_structures.stack import Stack
 
-my_input = "(* (+ 1 2) 2))()(+09768)"
+my_input = "(* (+ 1 2) 2))()(+68)"
 
 stack1 = Stack()
 
