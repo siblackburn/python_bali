@@ -31,6 +31,11 @@ class LinkedList:
                 current_node = current_node.next
             return False
 
+    def __iter__(self):
+        current = self._first
+        while current:
+            yield(current.node_value)
+
     # Complexity: O(n)
     def __len__(self, length):
         current_node = self._first
