@@ -1,36 +1,25 @@
-class Quicksort2():
+def quicksort2(l):
+    high_list = []
+    low_list = []
+    pivot = round(len(l)/2)
 
-    def __init__(self, l=None, l_index=0, pivot=1, r_index=2):
-        self.l = l
-        self.l_index = l_index
-        self.pivot = pivot
-        self.r_index = r_index
+    if len(low_list) <= 1:
+        break
 
+    for item in l:
+        if item <= pivot:
+            low_list.append(item)
+        else:
+            high_list.append(item)
 
-    def qs(self, l):
-        pivot = 2
-        l_index = 0
-        r_index = 5
+    recursive_list = quicksort2(low_list) + pivot + quicksort2(high_list)
 
-        while l_index < pivot:
-            if l[l_index] < l[pivot]:
-                while r_index > pivot:
-                    if l[r_index] < l[pivot]:
-                        self.swap(l[l_index], l[r_index])
-                else:
-                    l.insert(pivot + 1, l.pop(l[l_index]))
+    return recursive_list
 
-                r_index -= 1
-        l_index += 1
-
-        return l
-
-    def swap(self, x, y):
-        x, y = y, x
 
 l = [1,3,4,7,2,5]
-my_test = Quicksort2()
-print(my_test.qs(l))
+my_test = quicksort2(l)
+print(my_test)
 
 
 

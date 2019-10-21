@@ -12,24 +12,23 @@ def bubble_sort(l):
     pointer_1 = 0
     pointer_2 = 1
     count = 0
-    while count < len(l):
-        if pointer_2 <= len(l):
+    while count <= len(l):
+        while pointer_2 < len(l):
             if l[pointer_1] > l[pointer_2]:
                 temp = l[pointer_1]
                 l[pointer_1] = l[pointer_2]
                 l[pointer_2] = temp
-            pointer_1 += 1
-            pointer_2 += 1
+            else:
+                pointer_1 += 1
+                pointer_2 += 1
         pointer_1 = 0
-        pointer_2 = 0
-        count +=1
+        pointer_2 = 1
+        count += 1
 
     return l
 
-test_list = [4,1,3,2]
+test_list = [7,4,1,-1,3,2,5,0,29]
 output = bubble_sort(test_list)
 print(output)
 
-pointer_1 = 0
-print(test_list[pointer_1])
 print(len(test_list))

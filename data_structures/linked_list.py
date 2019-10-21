@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self, node_value=None, next = None): #by default the first node won't have anything to point to, so should be none
+    def __init__(self, node_value=None, next=None): #by default the first node won't have anything to point to, so should be none
         self._node_value = node_value
         self.next_node = next
 
@@ -11,7 +11,6 @@ class LinkedList:
     
     def __init__(self):
         self._first = None
-        self.count = 0
 
     '''
     Complexity: O(1) because this is only ever dealing with 2 items in the linked list
