@@ -1,0 +1,302 @@
+{
+"data": [
+{
+"id": 1,
+"first_name": "Bob",
+"last_name": "Jones",
+"email": "bob@email.com",
+"createdAt": 1549131644000,
+"updatedAt": 1566820917000
+},
+{
+"id": 2,
+"first_name": "Caden2",
+"last_name": "MacKenzie2",
+"email": "caden@codingnomads.co",
+"createdAt": 1549131677000,
+"updatedAt": 1556165485000
+},
+{
+"id": 3,
+"first_name": "Caden5",
+"last_name": "MacKenzie5",
+"email": "caden2@codingnomads.co",
+"createdAt": 1549560964000,
+"updatedAt": 1549560964000
+},
+{
+"id": 4,
+"first_name": "Caden Updated",
+"last_name": "MacKenzie Updated",
+"email": "caden_up@codingnomads.co",
+"createdAt": 1549561026000,
+"updatedAt": 1549561070000
+},
+{
+"id": 5,
+"first_name": "Martin",
+"last_name": "Breuss",
+"email": "breuss.martin@gmail.com",
+"createdAt": 1552578981000,
+"updatedAt": 1552578981000
+},
+{
+"id": 10,
+"first_name": "Simon",
+"last_name": "Kim",
+"email": "simon@codingnomads.co",
+"createdAt": 1555981127000,
+"updatedAt": 1555981511000
+},
+{
+"id": 12,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1558371639000,
+"updatedAt": 1558371639000
+},
+{
+"id": 13,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1558500111000,
+"updatedAt": 1558500111000
+},
+{
+"id": 14,
+"first_name": "Bob",
+"last_name": "Smith",
+"email": "bobbysmith@gmail.com",
+"createdAt": 1558568615000,
+"updatedAt": 1558568615000
+},
+{
+"id": 16,
+"first_name": "Aaron",
+"last_name": "Bigelow",
+"email": "aaron@bigelow.com",
+"createdAt": 1559600519000,
+"updatedAt": 1559600519000
+},
+{
+"id": 17,
+"first_name": "Aaron",
+"last_name": "Bigelow",
+"email": "aaron@bigelow.com",
+"createdAt": 1559600668000,
+"updatedAt": 1559600668000
+},
+{
+"id": 18,
+"first_name": "Aaron",
+"last_name": "Bigelow",
+"email": "aaron@bigelow.com",
+"createdAt": 1559601331000,
+"updatedAt": 1559601331000
+},
+{
+"id": 19,
+"first_name": "Martin",
+"last_name": "Breuss",
+"email": "martin@codingnomads.co",
+"createdAt": 1560323028000,
+"updatedAt": 1560323028000
+},
+{
+"id": 20,
+"first_name": "Aar",
+"last_name": "Big",
+"email": "aarbig@email.com",
+"createdAt": 1561160196000,
+"updatedAt": 1561160196000
+},
+{
+"id": 23,
+"first_name": "kapal",
+"last_name": "tuly",
+"email": "kaptu@email.com",
+"createdAt": 1561857168000,
+"updatedAt": 1561857168000
+},
+{
+"id": 24,
+"first_name": "Lukas",
+"last_name": "Herrmann",
+"email": "lumaherr@gmail.com",
+"createdAt": 1564132602000,
+"updatedAt": 1564134274000
+},
+{
+"id": 31,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1566417736000,
+"updatedAt": 1566417736000
+},
+{
+"id": 32,
+"first_name": "Rogey",
+"last_name": "Pan",
+"email": "lilrog@roger.com",
+"createdAt": 1566418680000,
+"updatedAt": 1566418680000
+},
+{
+"id": 33,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1566790692000,
+"updatedAt": 1566790692000
+},
+{
+"id": 35,
+"first_name": "Bob",
+"last_name": "Meredith",
+"email": "afake@email.com",
+"createdAt": 1566831578000,
+"updatedAt": 1566831578000
+},
+{
+"id": 36,
+"first_name": "Bob",
+"last_name": "Meredith",
+"email": "afake@email.com",
+"createdAt": 1566831764000,
+"updatedAt": 1566831764000
+},
+{
+"id": 37,
+"first_name": "Bob",
+"last_name": "Meredith",
+"email": "afake@email.com",
+"createdAt": 1566832067000,
+"updatedAt": 1566832067000
+},
+{
+"id": 38,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1567158106000,
+"updatedAt": 1567158106000
+},
+{
+"id": 39,
+"first_name": "[mememememe]",
+"last_name": "[youyyouoyoyo]",
+"email": "[god@email.com]",
+"createdAt": 1567158200000,
+"updatedAt": 1567158200000
+},
+{
+"id": 41,
+"first_name": "Tiddies",
+"last_name": "McGee",
+"email": "Doritoes@yahoo.com",
+"createdAt": 1567521626000,
+"updatedAt": 1567523254000
+},
+{
+"id": 43,
+"first_name": "Coder",
+"last_name": "John",
+"email": "coder_john@apple.com",
+"createdAt": 1567615923000,
+"updatedAt": 1567615923000
+},
+{
+"id": 44,
+"first_name": "Coder",
+"last_name": "John",
+"email": "coder_john@apple.com",
+"createdAt": 1567615941000,
+"updatedAt": 1567615941000
+},
+{
+"id": 45,
+"first_name": "Coder",
+"last_name": "John",
+"email": "coder_john@apple.com",
+"createdAt": 1567615950000,
+"updatedAt": 1567615950000
+},
+{
+"id": 46,
+"first_name": "Coder",
+"last_name": "John",
+"email": "coder_john@apple.com",
+"createdAt": 1567615954000,
+"updatedAt": 1567615954000
+},
+{
+"id": 47,
+"first_name": "updated_name",
+"last_name": "updated_last_name",
+"email": "updated_email",
+"createdAt": 1567615970000,
+"updatedAt": 1567616794000
+},
+{
+"id": 49,
+"first_name": "Test",
+"last_name": "Account",
+"email": "test@gmail.com",
+"createdAt": 1568203409000,
+"updatedAt": 1568203409000
+},
+{
+"id": 50,
+"first_name": "RyanTest",
+"last_name": "DesmondTest",
+"email": "ryan@codingnomads.co",
+"createdAt": 1568666129000,
+"updatedAt": 1568666129000
+},
+{
+"id": 52,
+"first_name": "JMONEY BAG$$$$",
+"last_name": "mONeY, MoNeY, MONEY",
+"email": "Ca$HMonEY@gmail.com",
+"createdAt": 1569290181000,
+"updatedAt": 1569349264000
+},
+{
+"id": 54,
+"first_name": "[YOUR FIRST NAME FIELD]",
+"last_name": "[YOUR LAST NAME FIELD]",
+"email": "[YOUR EMAIL FIELD]",
+"createdAt": 1569571241000,
+"updatedAt": 1569571241000
+},
+{
+"id": 56,
+"first_name": "Simon",
+"last_name": "Blackburn",
+"email": "siblackburn@gmail.com",
+"createdAt": 1569649048000,
+"updatedAt": 1569649048000
+},
+{
+"id": 63,
+"first_name": "Jeremiah",
+"last_name": "Johnson",
+"email": "robredford@robsworld.com",
+"createdAt": 1570806143000,
+"updatedAt": 1570806143000
+},
+{
+"id": 66,
+"first_name": "peevus",
+"last_name": "mccoy",
+"email": "bigmac@awesome.com",
+"createdAt": 1571150244000,
+"updatedAt": 1571150244000
+}
+],
+"error": null,
+"statusCode": 200
+}
