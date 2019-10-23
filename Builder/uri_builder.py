@@ -7,6 +7,7 @@
 from typing import Dict
 
 import requests #to get info back from url
+import json
 from pprint import pprint
 import argparse
 
@@ -41,7 +42,7 @@ class Uri():
         base_url = Uri.to_string(self)
         response = requests.get(base_url)
         data = response.json()
-        return pprint(data)
+        return json.dumps(data, indent=1)
 
 class URIbuilder():
 
