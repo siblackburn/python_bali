@@ -20,7 +20,7 @@ class Crawler:
 
         processing_queue = queue.Queue()
         processing_queue.put(CrawlerItem(self.initial_url, 1))
-        while len(processing_queue) > 0:
+        while not processing_queue.empty() > 0:
             item = processing_queue.get()
             url = item.url
 
