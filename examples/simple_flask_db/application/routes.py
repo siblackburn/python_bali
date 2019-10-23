@@ -13,6 +13,3 @@ app.register_blueprint(BookApi, url_prefix='/books')
 def hello():
     return render_template('hello.html')
 
-@app.route('/<name>')
-def hello_user(name):
-    return render_template('hello.html', user=name)
