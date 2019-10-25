@@ -27,13 +27,20 @@ Example requests:
 create a todo item:
 
 ```bash
-http POST "http://127.0.0.1:5000/todo/create" description=hello due_date=24-12-2019
+http POST "http://127.0.0.1:5000/todos/create" description=hello due_date=24-12-2019
 ```
 
 update a todo item (with id: 1):
 ```bash
-http PUT "http://127.0.0.1:5000/todo/1/" description=world due_date=25-12-2019
+http PUT "http://127.0.0.1:5000/todos/1/" description=world due_date=25-12-2019
 ```
+
+List of API's:
+
+Create a TODO: `POST http://127.0.0.1:5000/todos`
+List all TODOs: `GET http://127.0.0.1:5000/todos`
+Update a TODO by id: `PUT http://127.0.0.1:5000/todos/<id>`
+Delete a TODO by id: `DELETE http://127.0.0.1:5000/todos/<id>`
 
 ## Step 2
 
