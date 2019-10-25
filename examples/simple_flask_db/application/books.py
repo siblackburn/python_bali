@@ -5,8 +5,10 @@ from .models import Book
 
 BookApi = Blueprint('book_api', __name__)
 
+# this lives under /books/create, because this file has been declared as /books (see routes.py)
+#deb session is contained in config - needs to point to mysql
 
-@BookApi.route('/create', methods=['POST'])
+@BookApi.route('/create', methods=['POST']) # can create more than one method here (e.g. POST, GET etc)
 def create_book():
 
     try:
