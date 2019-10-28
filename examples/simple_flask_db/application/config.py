@@ -1,3 +1,6 @@
+import os
+
+
 class Config(object):
     DEBUG = False
     TESTING = False
@@ -5,10 +8,11 @@ class Config(object):
     SECRET_KEY = '12345'
     
     # sqlite
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
+    #SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
 
     # postgres
-    #SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user='postgres',pw='mysecretpassword',url='localhost',db='postgres')
+    db_password = os.environ['DB_PASSWORD']
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user='postgres',pw=db_password,url='simple_flask_db_postgres',db='postgres')
 
     # mysql
     #SQLALCHEMY_DATABASE_URI = 'mysql://username:password@server/db'
