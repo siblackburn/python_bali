@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  simple_flask_db_postgres:
+    image: postgres:11
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+
+  my_simple_flask_app:
+    build: ../
+    image: my_simple_flask_app:dev
+    restart: always
+    ports:
+      - 5000:5000
+    env_file:
+      - my_app.env
+
+volumes:
+  postgres_data:
