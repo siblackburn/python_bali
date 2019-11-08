@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+    <title>Hello!</title>
+</head>
+<body>
+  <h1>Hello {{ user or 'unknown person' }}!</h1>
+
+  <h2>Your calendars:</h2>
+
+    
+  {% if calendars %}
+    <ul>
+    {% for calendar in calendars %}
+      <li>{{calendar}}</li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>Nothing to show</p>
+  {% endif %}
+
+  <a href='/login'>Login with Google</a>
+  <a href='/logout'>Logout</a>
+</body>
